@@ -95,11 +95,11 @@ $(() => {
 
           $.ajax({
             // 1.전송할페이지
-            url: "./process/chkID.php",
+            url:"./process/chkID.php",
             // 2.전송방식 (get/post)
-            type: "post",
+            type:"post",
             // 3.보낼데이터
-            data: { mid: $("#mid").val() },
+            data:{ mid: $("#mid").val() },
             // 4.전송할데이터타입 : 웹문서는 "html"
             dataType: "html",
             // 5.비동기옵션
@@ -107,6 +107,8 @@ $(() => {
             // 다만 현재문서와의 동기처리를 하려면
             // 비동기옵션값을 false로 해야함
             // pass전역변수를 사용하기 위해 필요!
+            // 최종 트리거blur발생시 순서대로
+            // 처리할때 동기화해야하기때문에!
             async: false,
             // 6.성공처리
             success: function (res) {
@@ -143,7 +145,7 @@ $(() => {
           // 만약 아이디가 없으면 "멋진 아이디네요!"
 
           // 2. 메시지 띄우기
-          $(this).siblings(".msg").text("멋진 아이디네요!").addClass("on"); // 녹색글자
+          // $(this).siblings(".msg").text("멋진 아이디네요!").addClass("on"); // 녹색글자
         } ///// else /////
       } ////////// else if : 아이디 검사시 /////////
 
