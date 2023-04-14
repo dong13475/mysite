@@ -455,24 +455,24 @@
 
 
     <!--
-  [테이블 관련 요소]
-  
-  1. table : 전체 테이블 부모
-  2. tr (table row) : 테이블 라인
-  3. td (table data) : 테이블 데이터
-      - thead에서는 주로 td대신 th를 사용함
-        (th는 기본 두꺼운 글자에 중앙정렬을 함)
+    [테이블 관련 요소]
+    
+    1. table : 전체 테이블 부모
+    2. tr (table row) : 테이블 라인
+    3. td (table data) : 테이블 데이터
+        - thead에서는 주로 td대신 th를 사용함
+            (th는 기본 두꺼운 글자에 중앙정렬을 함)
   ********************************
-  (추가요소)
-  4. caption : 테이블 제목
-  5. thead : 테이블 머릿부분
-  6. tbody : 테이블 중앙내용부분
-  7. tfoot : 테이블 하단부분
-  -->
+    (추가요소)
+    4. caption : 테이블 제목
+    5. thead : 테이블 머릿부분
+    6. tbody : 테이블 중앙내용부분
+    7. tfoot : 테이블 하단부분
+    -->
 
 
 
-    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
     <script>
         /*//////////////////////////////////////////////
             함수명: logout
