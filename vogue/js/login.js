@@ -46,8 +46,8 @@ $(() => {
         "./process/loginSet.php",
         // 2. 전송할 데이터
         {
-          mid: mid.val(), // 아이디
-          mpw: mpw.val(), // 비번
+          "mid": mid.val(), // 아이디
+          "mpw": mpw.val(), // 비번
         },
         // 3. 결과처리함수(콜백함수)
         function (res) {
